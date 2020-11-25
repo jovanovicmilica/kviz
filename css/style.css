@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgba(190, 255, 251, 0.897);
+}
+.odgovori{
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+}
+
+.progres{
+    height: 25px;
+}
+.jedan{
+    height: 25px;
+    background-color: #007bff;
+    border-radius: 10px;
+}
+.trenutno{
+    background-color: seagreen;
+}
+.proslo{
+    background-color: grey;
+}

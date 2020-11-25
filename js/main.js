@@ -23,10 +23,10 @@ function pitanja(data,brojpitanja){
     var ispis=''
     ispis+=`<img class='img-fluid' src='${data[brojpitanja].slika.src}' alt='${data[brojpitanja].slika.alt}'>`
     
-    ispis+=`<div class='col-sm-12 col-md-7 mx-auto progres my-1 d-flex'>`
+    ispis+=`<div class='col-sm-12 col-md-7 flex-wrap justify-content-center mx-auto progres my-1 d-flex'>`
     var br=1;
     for(let i=0;i<data.length;i++){
-        ispis+=`<div class='col-1 jedan `
+        ispis+=`<div class='m-1 text-center col-2 jedan `
         if(br-1==brojpitanja){
             ispis+=`trenutno `
         }

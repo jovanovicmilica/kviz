@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeeeeab;
+    line-height: 1.8;
+    font-family: sans-serif;
+}
+#gore{
+    width: 100%;
+    background-color: #25a9cee7;
+}
+#goreDrzac{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+#gore i{
+    color: #000;
+    font-size: 20px;
+    padding: 2px;
+}
+#drzacMeni{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 30px;
+    box-shadow: 0px 3px 5px #c2c2c2;
+    background-color: #fff;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+ul li{
+    margin: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+    font-size: 20px;
+}
+#slajder{
+    width: 65%;
+    margin: 15px auto;
+}
+#slajder img{
+    width: 100%;
+}
+.blokovi{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#poruke, .senka{
+    box-shadow: 0px 3px 5px #c2c2c2;
+}
+.senka{
+    padding: 10px;
+}
+.blokovi i{
+    font-size: 35px;
+}
+.siva{
+    background-color: #eeeeeeab;
+}
+.naslov{
+    width: 100%;
+}
+.blok img{
+    width: 100%;
+    box-shadow: 0px 0px 10px #868686;
+}
+.blok{
+    width: 30%;
+    margin: 10px;
+    position: relative;
+}
+.blok h2{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: rgb(0, 0, 0);
+}
+.naslov{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div img{
+    border-radius: 5px;
+}
+.item{
+    margin: 10px;
+}
+.owl-carousel .owl-item img{
+    width: 100%;
+}
+.margina{
+    margin-top: 30px;
+}
+.bela{
+    background-color: #fff;
+}
+footer{
+    background-color: #25a9cee7;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+footer ul{
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer li{
+    margin: 5px;
+}
+footer li a{
+    padding: 5px;
+    font-size: 15px;
+}

@@ -31,8 +31,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 2px 30px;
-    box-shadow: 0px 3px 5px #c2c2c2;
     background-color: #fff;
+    box-shadow: 0px 1px 5px #c2c2c2;
 }
 ul{
     display: flex;
@@ -66,7 +66,11 @@ ul li a{
     flex-wrap: wrap;
 }
 #poruke, .senka{
-    box-shadow: 0px 3px 5px #c2c2c2;
+    margin: 25px 0px;
+    box-shadow: 0px 0px 7px #c2c2c2;
+}
+#poruke{
+    padding: 30px 0px;
 }
 .senka{
     padding: 10px;
@@ -123,6 +127,7 @@ footer{
     padding: 30px 0px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     text-align: left;
 }
 footer ul{
@@ -169,4 +174,104 @@ textarea{
 }
 #divLokacije i{
     font-size: 20px
+}
+#hamburger{
+    display: none;
+}
+#hamburger i{
+    font-size: 25px;
+    color: #25a9cee7;
+}
+#meni{
+    display: none;
+}
+.prozvod{
+    width: 30%;
+    background-color: #f8f8f8;
+    
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1000px){
+    .blokovi div{
+        width: 40%;
+    }
+    .blokovi .naslov{
+        width: 100%;
+    }
+    #slajder{
+        width: 90%;
+    } 
+    .blokovi .blok{
+        width: 45%;
+    }
+    #poruke div,#poruke2 div{
+        padding: 10px;
+    }
+    #kontakt, #lokacije{
+        width: 70%;
+    }
+    .kategorije{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width:800px){
+    #hamburger{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    #slajder{
+        margin-top: 120px;
+    }
+    #drzacMeni{
+        position: absolute;
+        top: 33px;
+        left: -0px;
+    }
+    #hamburger{
+        position: relative;
+        top: 0px;
+    }
+    #meni{
+        width: 100%;
+        position: relative;
+        top: 80px;
+        right: 0px;
+        background-color: #fff;
+    }
+    #meni ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    #kontakt, #lokacije{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:750px){
+    footer div:nth-last-child(1){
+        width: 100%;
+        text-align: center;
+    }
+    footer div:nth-last-child(1) ul{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:600px){
+    .blokovi div{
+        width: 80%;
+    }
+    .blokovi .blok{
+        width: 85%;
+    }
+    #goreDrzac{
+        flex-direction: column;
+    }
+    #drzacMeni{
+        top: 88px;
+    }
 }

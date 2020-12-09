@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #eeeeeeab;
+    background-color: #f1f1f1;
     line-height: 1.8;
     font-family: sans-serif;
 }
@@ -75,7 +75,7 @@ ul li a{
     font-size: 35px;
 }
 .siva{
-    background-color: #eeeeeeab;
+    background-color: #f1f1f1;
 }
 .naslov{
     width: 100%;
@@ -97,7 +97,7 @@ ul li a{
 }
 .naslov{
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 div img{
     border-radius: 5px;
@@ -107,6 +107,10 @@ div img{
 }
 .owl-carousel .owl-item img{
     width: 100%;
+}
+.pocetak{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .margina{
     margin-top: 30px;
@@ -131,4 +135,38 @@ footer li{
 footer li a{
     padding: 5px;
     font-size: 15px;
+}
+#kontakt,#lokacije{
+    width: 45%;
+    padding: 20px 10px;
+}
+input,textarea{
+    padding: 5px;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #f1f1f1;
+}
+textarea{
+    height: 70px;
+    resize: none;
+}
+#posalji{
+    background-color: #25a9cee7;
+    height: 35px;
+}
+#greskaIme,#greskaPrezime,#greskaMail,#greskaTelefon,#greskaPoruka,#poslata{
+    color: red;
+}
+#divLokacije{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#divLokacije div{
+    margin: 8px;
+}
+#divLokacije i{
+    font-size: 20px
 }

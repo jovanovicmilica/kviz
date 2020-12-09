@@ -20,7 +20,7 @@ function ispismreze(){
 }
 
 var nizNaziv=['Početna','Sobe','Kupatilo','Kuhinja', 'Kontakt']
-var nizLink=['index.html','spavaca.html','dnevna.html','kupatilo.html','kuhinja.html','kontakt.html']
+var nizLink=['index.html','sobe.html','kupatilo.html','kuhinja.html','kontakt.html']
 
 function ispisMeni(){
     var ispis=''
@@ -55,7 +55,7 @@ if(url.indexOf("index.html")!=-1){
     var ispis=''
     for(let i=0;i<poruke.length;i++){
         ispis+=`<div><i class="fas ${poruke[i]}"></i>
-        <h3>${naslovi[i]}</h3>
+        <p class="pocetak">${naslovi[i]}</p>
         <p>${tekst[i]}</p>
         </div>`
     }
@@ -109,7 +109,7 @@ if(url.indexOf("index.html")!=-1){
     var ispis3=''
     for(let i=0;i<nizBrojke.length;i++){
         ispis3+=`<div><i class="fas ${nizBrojke[i]}"></i>
-        <h3>${naslovi2[i]}</h3>
+        <p class="pocetak">${naslovi2[i]}</p>
         <p>${tekst2[i]}</p>
         </div>`
     }
@@ -134,7 +134,83 @@ function ispisfooter(){
     ispis+=`<div><h3>Korisni linkovi i mreže</h3><ul>
     <li><a href="sitemap.xml">Sitemap</a></li>
     <li><a href="autor.html">Autor</a></li>
+    <li><a href="doc.pdf">Dokumentacija</a></li>
     </ul></div>`
 
     document.getElementById("footer").innerHTML+=ispis
+}
+if(url.indexOf("kontakt.html")!=-1){
+    $("#posalji").click(function(){
+        var ime=$("#ime").val()
+        var prezime=$("#prezime").val()
+        var email=$("#email").val()
+        var telefon=$("#telefon").val()
+        var poruka=$("#poruka").val()
+
+
+        var regIme=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,18}$/
+        var regPrezime=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,28}(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,28})*$/
+        var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+        var regTelefon=/^06[012345679]\d{6,7}$/;
+
+        var greske=0;
+
+        if(!regIme.test(ime)){
+            $("#greskaIme").html("Ime mora početi velikim slovom i ima najmanje 3, a najviše 20 slova")
+            greske++
+        }
+        else{
+            $("#greskaIme").html("")
+        }
+        if(!regPrezime.test(prezime)){
+            $("#greskaPrezime").html("Prezime mora početi velikim slovom i ima najmanje 3, a najviše 30 slova")
+            greske++
+        }
+        else{
+            $("#greskaPrezime").html("")
+        }
+        if(!regEmail.test(email)){
+            $("#greskaMail").html("E-mail bla bla")
+            greske++
+        }
+        else{
+            $("#greskaMail").html("")
+        }
+        if(!regTelefon.test(telefon)){
+            $("#greskaTelefon").html("Broj mora biti u formatu 06XXXXXXX(X)")
+            greske++
+        }
+        else{
+            $("#greskaTelefon").html("")
+        }
+        if(poruka.split(" ").length<10){
+            $("#greskaPoruka").html("Poruka mora imati bar 10 reči")
+            greske++
+        }
+        else{
+            $("#greskaPoruka").html("")
+        }
+
+        if(greske==0){
+            $("#poslata").html("Poruka je poslata")
+            $("input[type=text]").val("")
+            $("textarea").val("")
+        }
+        else{
+            $("#poslata").html("Nisu sva polja ispravno popunjena")
+        }
+    })
+
+    var lokacije=['Beograd','Novi Sad','Nis','Jagodina','Leskovac','Čačak']
+
+    var adrese=['Zdravka Čelara br. 12', 'Bulevar oslobođenja br. 78','Nikole Tesle br. 5','27.marta br. 65','Vojislava Ilića br. 40','Vojvode Stepe br. 50']
+
+    var ispis=''
+    for(let i=0;i<lokacije.length;i++){
+        ispis+=`<div><h3><i class="fas fa-map-marker-alt"></i> ${lokacije[i]}</h3>
+        <p>${adrese[i]}</p></div>
+        `
+    }
+
+    document.getElementById("divLokacije").innerHTML+=ispis
 }

@@ -243,3 +243,38 @@ if(url.indexOf("kupatilo.html")!=-1){
 
     $("#proizvodi").html(ispis)
 }
+if(url.indexOf("sobe.html")!=-1){
+    var proizvodiNaziv=['Ugaona garnitura','Kauč','Dvosed','Fotelja','Dvosed','Stočić drveni','Stočić drveni','Stočić drveni','Stočić']
+
+    var proizvodiSlike=['ugaona.jpg','krevet2.jpg','krevet3.jpg','fotelja.jpg','krevet.jpg','stocic.jpg','stocic4.jpg','stocic2.jpg','stocic3.jpg']
+
+    var proizvodCena=[25000,27000,26000,17000,21000,7000,5000,6500,5200]
+    var ispis=''
+    for(let i=0;i<proizvodiNaziv.length;i++){
+        ispis+=`<div class='prozvod senka'>
+        <img alt='${proizvodiNaziv[i]}' src='img/${proizvodiSlike[i]}'/>
+        <p class='pocetak'>${proizvodiNaziv[i]}</p>
+        <p>${proizvodCena[i]} din</p>
+        </div>`
+    }
+
+    $("#proizvodi").html(ispis)
+}
+
+if(url.indexOf("kuhinja.html")!=-1){
+    var proizvodiNaziv=['Trpezarijska garnitura','Trpezarijska garnitura','Trpezarijska garnitura','Kuhinjski elementi','Kuhinjskae krpe','Kuhinjske krpe','Kuhinjski elementi','Kuhinjske krpe','Vitrina']
+
+    var proizvodiSlike=['kuhinja1.jpg','kuhinja2.jpg','kuhinja3.jpg','kuhinja4.jpg','krpa.jpg','krpa2.jpg','kuhinja5.jpg','krpa3.jpg','vitrina.jpg']
+
+    var proizvodCena=[17000,15000,13500,35000,200,250,35000,450,1000]
+    var ispis=''
+    for(let i=0;i<proizvodiNaziv.length;i++){
+        ispis+=`<div class='prozvod senka'>
+        <img alt='${proizvodiNaziv[i]}' src='img/${proizvodiSlike[i]}'/>
+        <p class='pocetak'>${proizvodiNaziv[i]}</p>
+        <p>${proizvodCena[i]} din</p>
+        </div>`
+    }
+
+    $("#proizvodi").html(ispis)
+}

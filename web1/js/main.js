@@ -32,6 +32,17 @@ function ispisMeni(){
 
     document.getElementById("nav").innerHTML+=ispis
 }
+var ispis4=''
+ispis4+=`<ul>`
+for(let i=0;i<nizNaziv.length;i++){
+    ispis4+=`<li><a href="${nizLink[i]}">${nizNaziv[i]}</a></li>`
+}
+ispis4+=`</ul>`
+$("#meni").html(ispis4)
+$("#meni").hide()
+$("#hamburger").click(function(){
+    $("#meni").toggle()
+})
 
 let url=location.href;
 
@@ -104,7 +115,7 @@ if(url.indexOf("index.html")!=-1){
 
     var nizBrojke=['fa-check','fa-globe-europe','fa-certificate','fa-percent']
     var naslovi2=['40 godina odličnih ponuda','Evropski koreni','Garancija','Uvek niska cena']
-    var tekst2=['Više od 100 prodavnica širom Srbije','Svetska kompanija osnovana 1980. godine','10 godina garancije na sve proizvode','Pažljivo odabrani artikli sa niskom cenom']
+    var tekst2=['Više od 20 prodavnica širom Srbije','Kompanija osnovana 1980. godine','10 godina garancije','Niska cena, visok kvalitet']
 
     var ispis3=''
     for(let i=0;i<nizBrojke.length;i++){
@@ -213,4 +224,22 @@ if(url.indexOf("kontakt.html")!=-1){
     }
 
     document.getElementById("divLokacije").innerHTML+=ispis
+}
+
+if(url.indexOf("kupatilo.html")!=-1){
+    var proizvodiSlike=['dozer.jpg','dozer2.jpg','drzaccetkica.jpg','drzacsapun.jpg','drzacsapun2.jpg','kanta.jpg','kanta2.jpg','ulje.jpg','ulje2.jpg']
+
+    var proizvodiNaziv=['Dozer za sapun','Dozer za sapun','Držač četkica','Držač za sapun','Držač za sapun','Kanta za smeće','Kanta za smeće','Mirisno ulje lavanda','Mirisno ulje limun']
+
+    var proizvodCena=[300,350,200,300,290,500,540,150,150]
+    var ispis=''
+    for(let i=0;i<proizvodiNaziv.length;i++){
+        ispis+=`<div class='prozvod senka'>
+        <img alt='${proizvodiNaziv[i]}' src='img/${proizvodiSlike[i]}'/>
+        <p class='pocetak'>${proizvodiNaziv[i]}</p>
+        <p>${proizvodCena[i]} din</p>
+        </div>`
+    }
+
+    $("#proizvodi").html(ispis)
 }

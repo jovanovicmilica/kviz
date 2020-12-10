@@ -198,7 +198,7 @@ input{
     border: 1px solid #a3a3a3;
     font-family: 'Quicksand', sans-serif;
 }
-input[type=text],input[type=date],input[type=time]{
+input[type=text],input[type=date],input[type=time],input[type=email]{
     border: none;
     border-bottom: 1px solid #a3a3a3;
 }

@@ -63,6 +63,9 @@ ul li a{
 .autor img{
     width: 100%;
 }
+.prozvod img{
+    width: 70%;
+}
 .blokovi{
     padding: 40px;
     width: 100%;

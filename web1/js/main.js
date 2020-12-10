@@ -12,8 +12,6 @@ $("#scroll a").click(function() {
 });
 
 $(window).scroll(function(){
-    var p=window.pageYOffset
-    console.log(p)
     if(window.pageYOffset>80){
         $("#scroll").removeClass("hide")
         $("#scroll").addClass("show")

@@ -168,7 +168,7 @@ function ispisfooter(){
     <li>E-mail: fotelja@gmail.com</li></ul></div>
     `
 
-    ispis+=`<div><h3>Korisni linkovi i mreže</h3><ul>
+    ispis+=`<div><h3>Korisni linkovi</h3><ul>
     <li><a href="sitemap.xml">Sitemap</a></li>
     <li><a href="autor.html">Autor</a></li>
     <li><a href="doc.pdf">Dokumentacija</a></li>

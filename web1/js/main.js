@@ -185,8 +185,8 @@ if(url.indexOf("kontakt.html")!=-1){
         var poruka=$("#poruka").val()
 
 
-        var regIme=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,18}$/
-        var regPrezime=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,28}(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,28})*$/
+        var regIme=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,19}$/
+        var regPrezime=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,29}(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,29})*$/
         var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
         var regTelefon=/^06[012345679]\d{6,7}$/;
 

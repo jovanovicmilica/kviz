@@ -10,6 +10,11 @@
     <link rel="shortcut icon" href="img/logo1.ico">
 </head>
 <body>
+    <div id="scroll" class="hide">
+        <a href="#">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
     <header>
         <div id="gore">
             <div id="goreDrzac">
@@ -34,17 +39,17 @@
             <div id="kontakt">
                 <h2>Pišite nam</h2>
                 <form action="#" method="post">
-                    <p>Ime:</p><input type="text" id="ime">
+                    <p>Ime:</p><input type="text" id="ime" name="ime">
                     <p id="greskaIme"></p>
-                    <p>Prezime:</p><input type="text" id="prezime">
+                    <p>Prezime:</p><input type="text" name="prezime" id="prezime">
                     <p id="greskaPrezime"></p>
-                    <p>E-mail:</p><input type="text" id="email">
+                    <p>E-mail:</p><input type="text" name="email" id="email">
                     <p id="greskaMail"></p>
-                    <p>Telefon:</p><input type="text" id="telefon">
+                    <p>Telefon:</p><input type="text" name="telefon" id="telefon">
                     <p id="greskaTelefon"></p>
-                    <p>Poruka:</p><textarea name="poruka" id="poruka"></textarea>
+                    <p>Poruka:</p><textarea name="poruka" name="poruka" id="poruka"></textarea>
                     <p id="greskaPoruka"></p>
-                    <input type="button" value="Pošalji" id="posalji">
+                    <input type="button" value="Pošalji" name="posalji" id="posalji">
                     <p id="poslata"></p>
                 </form>
             </div>

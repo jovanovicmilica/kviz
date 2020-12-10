@@ -6,13 +6,32 @@ window.onload=function(){
 
 
 }
+$("#scroll a").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
+$(window).scroll(function(){
+    var p=window.pageYOffset
+    console.log(p)
+    if(window.pageYOffset>80){
+        $("#scroll").removeClass("hide")
+        $("#scroll").addClass("show")
+    }
+    else{
+        $("#scroll").removeClass("show")
+        $("#scroll").addClass("hide")
+    }
+})
+
+
 function ispismreze(){
     var nizmreze=['fa-facebook-f','fa-instagram','fa-youtube','fa-twitter']
     var nizLinkMreze=['https://www.facebook.com','https://www.instagram.com','https://www.youtube.com','https://www.twitter.com/']
     var ispis=''
     ispis+=`<div>`
     for(let i=0;i<nizLinkMreze.length;i++){
-        ispis+=`<a href="${nizLinkMreze[i]}"><i class="fab ${nizmreze[i]}"></i></a>`
+        ispis+=`<a target="_blank" href="${nizLinkMreze[i]}"><i class="fab ${nizmreze[i]}"></i></a>`
     }
     ispis+=`</div>`
 
@@ -43,6 +62,7 @@ $("#meni").hide()
 $("#hamburger").click(function(){
     $("#meni").toggle()
 })
+
 
 let url=location.href;
 
@@ -78,19 +98,25 @@ if(url.indexOf("index.html")!=-1){
 
     var ispisKategorije=''
     for(let i=0;i<kategorije.length;i++){
-        ispisKategorije+=`<div class="blok">
+        ispisKategorije+=`<div class="blok kat">
         <h2>${kategorije[i]}</h2>
-        <img src="img/${slikeKategorije[i]}">
+        <img alt="${kategorije[i]}" src="img/${slikeKategorije[i]}">
         </div>`
     }
 
     document.getElementById("kateogorije").innerHTML+=ispisKategorije;
 
+    $(".kat img").mouseover(function(){
+        this.animate( {
+            boxShadow: "0px 0px 20px #868686"
+        },1000)
+    })
+
     var slikeBrendovi=['dreamzone.jpg','emmezeta.jpg','hoie.jpg','kronborg.jpg','formaideale.jpg','jutlandia.jpg']
 
     var ispis2=''
     for(let i=0;i<slikeBrendovi.length;i++){
-        ispis2+=`<div class='item'><img src='img/${slikeBrendovi[i]}'/></div>`
+        ispis2+=`<div class='item'><img alt="Brend logo" src='img/${slikeBrendovi[i]}'/></div>`
     }
 
     document.getElementById("brendovi").innerHTML+=ispis2
@@ -126,6 +152,8 @@ if(url.indexOf("index.html")!=-1){
     }
 
     document.getElementById("poruke2").innerHTML+=ispis3
+
+
 }
 
 function ispisfooter(){
@@ -181,7 +209,7 @@ if(url.indexOf("kontakt.html")!=-1){
             $("#greskaPrezime").html("")
         }
         if(!regEmail.test(email)){
-            $("#greskaMail").html("E-mail bla bla")
+            $("#greskaMail").html("E-mail mora biti u formatu nikola@gmail.com ili nikola.brzovan.88.18@ict.edu.rs")
             greske++
         }
         else{

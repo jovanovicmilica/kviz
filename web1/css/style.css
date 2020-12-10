@@ -56,6 +56,13 @@ ul li a{
 #slajder img{
     width: 100%;
 }
+.autor{
+    margin: 0px auto;
+    width: 50%;
+}
+.autor img{
+    width: 100%;
+}
 .blokovi{
     padding: 40px;
     width: 100%;
@@ -191,7 +198,22 @@ textarea{
     
     border-radius: 5px;
 }
-
+#scroll{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 999;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+#scroll a{
+    color: #004457;
+    font-size: 30px;
+}
 @media screen and (max-width:1000px){
     .blokovi div{
         width: 40%;

@@ -202,6 +202,9 @@ input[type=text],input[type=date],input[type=time],input[type=email]{
     border: none;
     border-bottom: 1px solid #a3a3a3;
 }
+input[type=button]{
+    border-radius: 5px;
+}
 .kontaktdiv{
     width: 80%;
     align-items: center;

@@ -1,0 +1,298 @@
+[
+    {
+        "id":1,
+        "tekst": "Beograd je glavni grad koje drzave?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Crne gore",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Makedonije",
+                "tacan":false
+            },
+            {
+                "id":2,
+                "naziv":"Srbije",
+                "tacan":true
+            },
+            {
+                "id":3,
+                "naziv":"Bugarske",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/bg.jpg",
+            "alt":"Slika Beograda"
+        }
+    },
+    {
+        "id":2,
+        "tekst": "U kojoj zemlji izvire Dunav?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Srbiji",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Nemačkoj",
+                "tacan":true
+            },
+            {
+                "id":2,
+                "naziv":"Austriji",
+                "tacan":false
+            },
+            {
+                "id":3,
+                "naziv":"Francuskoj",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/dunav.jpg",
+            "alt":"Slika Dunava"
+        }
+    },
+    {
+        "id":3,
+        "tekst": "Koliko nogu ima pauk?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":8,
+                "tacan":true
+            },
+            {
+                "id":1,
+                "naziv":4,
+                "tacan":false
+            },
+            {
+                "id":2,
+                "naziv":10,
+                "tacan":false
+            },
+            {
+                "id":3,
+                "naziv":6,
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/spider.jpg",
+            "alt":"Slika pauk"
+        }
+    },
+    {
+        "id":4,
+        "tekst": "Sta znaci skracenica HTML?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"How To Make Lemonade",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"HyperText Markup Language ",
+                "tacan":true
+            }
+        ],
+        "slika":{
+            "src":"img/html.jpg",
+            "alt":"Slika html"
+        }
+    },
+    {
+        "id":5,
+        "tekst": "Koliko je '5'+5?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"10",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Nije moguce sabrati",
+                "tacan":false
+            }
+            ,
+            {
+                "id":2,
+                "naziv":"55",
+                "tacan":true
+            },
+            {
+                "id":3,
+                "naziv":"0",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/js.jpg",
+            "alt":"Slika js"
+        }
+    },
+    {
+        "id":6,
+        "tekst": "Koja je najsevernija prestonica na kopnu Evrope?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Moskva",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Helsinki",
+                "tacan":true
+            }
+            ,
+            {
+                "id":2,
+                "naziv":"Stokholm",
+                "tacan":false
+            },
+            {
+                "id":3,
+                "naziv":"Oslo",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/evropa.jpg",
+            "alt":"Slika js"
+        }
+    },
+    {
+        "id":7,
+        "tekst": "Ko je decak sa slike?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Kevin Mccallister",
+                "tacan":true
+            },
+            {
+                "id":1,
+                "naziv":"Pera Peric",
+                "tacan":false
+            }
+            ,
+            {
+                "id":2,
+                "naziv":"Boba iz Boljeg zivota",
+                "tacan":false
+            },
+            {
+                "id":3,
+                "naziv":"Denis napast",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/kevin.jpg",
+            "alt":"Slika Kevin"
+        }
+    },
+    {
+        "id":8,
+        "tekst": "Kako se zove macak sa slike",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Maza",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Cica",
+                "tacan":false
+            }
+            ,
+            {
+                "id":2,
+                "naziv":"Švrća",
+                "tacan":false
+            },
+            {
+                "id":3,
+                "naziv":"Garfild",
+                "tacan":true
+            }
+        ],
+        "slika":{
+            "src":"img/garfild.jpg",
+            "alt":"Slika Garfild"
+        }
+    },
+    {
+        "id":9,
+        "tekst": "Od cega je Sundjer Bobova kucica?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Jabuke",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Kruske",
+                "tacan":false
+            }
+            ,
+            {
+                "id":2,
+                "naziv":"Ananasa",
+                "tacan":true
+            },
+            {
+                "id":3,
+                "naziv":"Cigle",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/sundjer.jpg",
+            "alt":"Slika Sundjer Bob"
+        }
+    },
+    {
+        "id":10,
+        "tekst": "Radnja serije Bolji zivot prati zivot kod para?",
+        "odgovor":[
+            {
+                "id":0,
+                "naziv":"Angelina Jolie i Brad Pitt",
+                "tacan":false
+            },
+            {
+                "id":1,
+                "naziv":"Emilije i Gige Popadic",
+                "tacan":true
+            }
+            ,
+            {
+                "id":2,
+                "naziv":"Justin Timberlake i Britney Spears",
+                "tacan":false
+            },
+            {
+                "id":3,
+                "naziv":"Gavrila i Valerije Gavrilovic",
+                "tacan":false
+            }
+        ],
+        "slika":{
+            "src":"img/boljizivot.jpg",
+            "alt":"Slika Bolji zivot"
+        }
+    }
+]
